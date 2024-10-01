@@ -1,0 +1,44 @@
+{
+  "push_up_challenge": [
+    ["push-ups", 10, 1, 1, 1],
+    ["diamond push-ups", 10, 1, 1, 2],
+    ["narrow push-ups", 10, 1, 1, 1],
+    ["wide push-ups", 10, 1, 1, 1],
+    ["archer push-ups", 10, 1, 1, 2],
+    ["pike push-ups", 10, 1, 1, 2]
+  ],
+  "pull_up_challenge": [
+    ["pull-ups", 10, 2, 1, 2],
+    ["wide pull-ups", 10, 2, 1, 2],
+    ["narrow pull-ups", 10, 1, 1, 2],
+    ["chin-ups", 10, 1, 1, 2]
+  ],
+  "core_challenge": [
+    ["crunches", 15, 1, 1, 1],
+    ["elbow plank", 30, 1, 1, 1],
+    ["full plank", 20, 1, 1, 2],
+    ["leg raises", 5, 1, 1, 2],
+    ["hanging knee raises", 10, 1, 1, 1],
+    ["hanging leg raises", 5, 1, 1, 2]
+  ],
+  "muscle_up": [
+    ["pull-ups", 10, 4, 1, 2],
+    ["wide pull-ups", 10, 4, 1, 2],
+    ["narrow pull-ups", 10, 4, 1, 2],
+    ["high pull-ups", 10, 4, 1, 3],
+    ["chin-ups", 10, 4, 1, 2]
+  ],
+  "L-sit": [
+    ["hanging knee raises", 10, 4, 1, 2],
+    ["hanging leg raises", 10, 4, 1, 2],
+    ["leg raises", 10, 4, 1, 2],
+    ["L-sit progression", 15, 4, 1, 2],
+    ["full plank", 60, 4, 1, 2]
+  ],
+  "handstand": [
+    ["frog stand", 15, 4, 1, 2],
+    ["wall handstand", 15, 4, 1, 2],
+    ["pike push-ups", 10, 4, 1, 2],
+    ["elevated pike push-ups", 10, 4, 1, 2]
+  ]
+}

@@ -1,0 +1,52 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/background"
+    android:id="@+id/weightLayout">
+
+    <Button
+        android:id="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/other_stats"
+        android:textAppearance="?android:textAppearanceLarge"
+        android:paddingStart="16dp"
+        android:paddingEnd="16dp"
+        android:paddingBottom="30dp"
+        android:gravity="center"
+        android:background="@color/background"
+        android:textAllCaps="false" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <TextView
+            android:id="@+id/today_form"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:background="@drawable/rounded_corners_gray_stroke"
+            android:gravity="center"
+            android:padding="10dp"
+            android:text="@string/your_form_today"
+            android:textAllCaps="false"
+            android:textSize="16dp"
+            tools:ignore="SpUsage,TextSizeCheck" />
+
+        <TextView
+            android:id="@+id/weight_lifted"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:background="@drawable/rounded_corners_gray_stroke"
+            android:gravity="center"
+            android:padding="10dp"
+            android:layout_marginTop="20dp"
+            android:text="@string/weight_lifted"
+            android:textAllCaps="false"
+            android:textSize="16dp"
+            tools:ignore="SpUsage,TextSizeCheck" />
+    </LinearLayout>
+</LinearLayout>

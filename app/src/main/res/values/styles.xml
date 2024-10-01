@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="CustomChipStyle" parent="Widget.MaterialComponents.Chip.Choice">
+        <item name="chipBackgroundColor">@color/custom_chip_background</item>
+        <item name="chipMinHeight">48dp</item>
+        <item name="chipCornerRadius">60dp</item>
+        <item name="android:textSize">15dp</item>
+        <item name="ensureMinTouchTargetSize">false</item>
+    </style>
+
+    <style name="CustomSwitchStyle" parent="Widget.AppCompat.CompoundButton.Switch">
+        <!-- Thumb color when switch is off -->
+        <item name="android:thumbTint">@color/pink</item>
+        <!-- Track color when switch is off -->
+        <item name="android:trackTint">@color/light_pink</item>
+    </style>
+
+    <style name="CustomDialogTheme" parent="Theme.AppCompat.Light.Dialog.Alert">
+        <item name="android:background">@color/pink</item>
+        <item name="dialogCornerRadius">20dp</item>
+    </style>
+
+    <style name="MyToolbarStyle" parent="Widget.AppCompat.Toolbar">
+        <item name="android:padding">0dp</item>
+        <item name="android:paddingLeft">0dp</item>
+        <item name="android:paddingRight">0dp</item>
+        <item name="android:paddingTop">0dp</item>
+        <item name="android:paddingBottom">0dp</item>
+        <item name="android:layout_margin">0dp</item>
+    </style>
+
+    <style name="Corners" parent="">
+        <item name="cornerFamily">rounded</item>
+        <item name="cornerSize">6dp</item>
+        <item name="color">@color/white</item>
+    </style>
+</resources>

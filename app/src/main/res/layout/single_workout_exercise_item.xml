@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="20dp" >
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="86dp"
+        android:background="@drawable/rounded_corners_gray" >
+
+        <LinearLayout
+            android:id="@+id/numbers"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <TextView
+                android:id="@+id/number"
+                android:layout_width="50dp"
+                android:layout_height="28dp"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="25dp"
+                android:gravity="center_vertical"
+                android:text="@string/test"
+                android:textSize="25dp"
+                tools:ignore="SpUsage,TextSizeCheck" />
+
+            <TextView
+                android:id="@+id/weight"
+                android:layout_width="65dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="5dp"
+
+                android:gravity="center_horizontal"
+                android:textSize="13dp"
+                tools:ignore="SpUsage,TextSizeCheck" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/name"
+            android:layout_width="145dp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="8dp"
+            android:text="@string/test"
+            android:textSize="16dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/skip"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toEndOf="@+id/numbers"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:ignore="SpUsage,TextSizeCheck" />
+
+        <ImageView
+            android:id="@+id/done"
+            android:layout_width="36dp"
+            android:layout_height="32dp"
+            android:layout_marginEnd="68dp"
+            android:contentDescription="@string/delete"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/done"
+            tools:ignore="ImageContrastCheck" />
+
+        <ImageView
+            android:id="@+id/skip"
+            android:layout_width="20dp"
+                android:layout_height="20dp"
+            android:layout_marginEnd="28dp"
+            android:contentDescription="@string/delete"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/skip"
+            tools:ignore="ImageContrastCheck" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</LinearLayout>

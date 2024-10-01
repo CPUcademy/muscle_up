@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="20dp"
+    tools:context=".MainActivity" >
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="5dp"
+        android:text="@string/connect_to_the_device"
+        tools:ignore="TextContrastCheck" />
+
+    <RelativeLayout
+        android:id="@+id/fragment"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:background="@drawable/border"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="8dp"
+        android:paddingBottom="8dp"
+        android:text="@string/trainingDays"
+        tools:ignore="TextContrastCheck" />
+
+    <com.google.android.material.chip.ChipGroup
+        android:id="@+id/trainingDays"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal" />
+
+    <Switch
+        android:id="@+id/pull_up_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:minHeight="34dp"
+        android:layout_marginTop="10dp"
+        android:text="@string/do_you_have_a_pull_up_bar"
+        tools:ignore="UseSwitchCompatOrMaterialXml"
+        style="@style/CustomSwitchStyle" />
+
+    <Switch
+        android:id="@+id/dip_rails"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:minHeight="34dp"
+        android:text="@string/do_you_have_dip_rails"
+        tools:ignore="UseSwitchCompatOrMaterialXml"
+        style="@style/CustomSwitchStyle" />
+
+    <Switch
+        android:id="@+id/dumbbells"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:minHeight="34dp"
+        android:text="@string/do_you_have_dumbbells"
+        tools:ignore="UseSwitchCompatOrMaterialXml"
+        style="@style/CustomSwitchStyle" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="14dp"
+        android:text="@string/date"
+        tools:ignore="TextContrastCheck" />
+
+    <EditText
+        android:id="@+id/dateOfVacation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:autofillHints=""
+        android:ems="10"
+        android:inputType="date"
+        android:minHeight="48dp"
+        android:focusable="false"
+        tools:ignore="LabelFor" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="7dp" >
+
+        <TextView
+            android:layout_width="180dp"
+            android:layout_height="match_parent"
+            android:layout_marginEnd="10dp"
+            android:text="@string/choose_your_rest_time_in_between_sets_in_seconds" />
+
+        <Spinner
+            android:id="@+id/rest_time"
+            android:layout_width="match_parent"
+            android:layout_height="40dp" />
+    </LinearLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp" >
+
+        <Button
+            android:id="@+id/defaults"
+            android:layout_width="170dp"
+            android:layout_height="60dp"
+            android:background="@drawable/background_color_selector_gray"
+            android:gravity="center"
+            android:padding="0dp"
+            android:text="@string/defaults"
+            android:textAllCaps="false"
+            android:textSize="16dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:ignore="SpUsage,TextSizeCheck" />
+
+        <Button
+            android:id="@+id/manual"
+            android:layout_width="170dp"
+            android:layout_height="60dp"
+            android:background="@drawable/background_color_selector_gray"
+            android:gravity="center"
+            android:padding="0dp"
+            android:text="@string/device_manual"
+            android:textAllCaps="false"
+            android:textSize="16dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:ignore="SpUsage,TextSizeCheck" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</LinearLayout>

@@ -1,0 +1,4 @@
+<selector xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item android:state_checked="true" app:chipBackgroundColor="@color/pink" android:color="@color/pink" />
+    <item android:state_checked="false" app:chipBackgroundColor="@color/background" android:color="@color/background" />
+</selector>

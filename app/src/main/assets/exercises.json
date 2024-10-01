@@ -1,0 +1,50 @@
+{
+  "abs": [
+    ["crunches", 15, 4, 1, 1],
+    ["elbow plank", 30, 4, 1, 1],
+    ["full plank", 20, 4, 1, 2],
+    ["side plank", 15, 4, 1, 2],
+    ["russian twists", 30, 4, 1, 1],
+    ["leg raises", 5, 4, 1, 2]
+  ],
+  "chest": [
+    ["push-ups", 10, 4, 1, 1],
+    ["diamond push-ups", 5, 4, 1, 2],
+    ["narrow push-ups", 10, 4, 1, 1],
+    ["incline push-ups", 10, 4, 1, 1],
+    ["dips", 5, 4, 1, 2],
+    ["chest flies", 10, 4, 5, 1]
+  ],
+  "back": [
+    ["pull-ups", 5, 4, 1, 2],
+    ["wide pull-ups", 5, 4, 1, 2],
+    ["narrow pull-ups", 5, 4, 1, 2],
+    ["chin-ups", 5, 4, 1, 2],
+    ["wide push-ups", 10, 4, 1, 1],
+    ["push-ups", 10, 4, 1, 1]
+  ],
+  "shoulders": [
+    ["lateral raises", 10, 4, 5, 1],
+    ["shoulder press", 10, 4, 5, 1],
+    ["pike push-ups", 5, 4, 1, 2],
+    ["tricep dips", 10, 4, 1, 1],
+    ["elbow plank", 30, 4, 1, 1],
+    ["full plank", 20, 4, 1, 2]
+  ],
+  "arms": [
+    ["bicep curls", 10, 4, 5, 1],
+    ["hammer curls", 10, 4, 5, 1],
+    ["narrow push-ups", 10, 4, 1, 1],
+    ["tiger push-ups", 5, 4, 1, 2],
+    ["diamond push-ups", 5, 4, 1, 2],
+    ["push-ups", 10, 4, 1, 1]
+  ],
+  "legs": [
+    ["squats", 20, 4, 1, 1],
+    ["mountain climbers", 20, 4, 1, 1],
+    ["lunges", 20, 4, 1, 1],
+    ["step-ups", 20, 4, 1, 1],
+    ["leg raises", 5, 4, 1, 2],
+    ["bulgarian squats", 10, 4, 1, 2]
+  ]
+}

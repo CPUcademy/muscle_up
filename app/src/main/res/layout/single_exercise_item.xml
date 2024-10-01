@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="20dp" >
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="86dp"
+        android:background="@drawable/rounded_corners_gray" >
+
+        <com.google.android.material.imageview.ShapeableImageView
+            android:id="@+id/exerciseImage"
+            android:layout_width="56dp"
+            android:layout_height="56dp"
+            android:adjustViewBounds="true"
+            android:scaleType="fitCenter"
+            android:layout_margin="5dp"
+            android:layout_centerInParent="true"
+            android:layout_marginStart="7dp"
+            android:layout_marginTop="6dp"
+            android:layout_marginBottom="6dp"
+            android:src="@drawable/image"
+            app:shapeAppearanceOverlay="@style/Corners"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <LinearLayout
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginStart="38dp"
+            android:layout_marginEnd="6dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/icons"
+            app:layout_constraintStart_toEndOf="@+id/exerciseImage"
+            app:layout_constraintTop_toTopOf="parent">
+            <TextView
+                android:id="@+id/name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/test"
+                android:textStyle="bold"
+                android:textSize="16dp"
+                tools:ignore="SpUsage,TextSizeCheck" />
+
+            <TextView
+                android:id="@+id/number"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/test"
+                android:textSize="16dp"
+                tools:ignore="SpUsage,TextSizeCheck" />
+
+            <TextView
+                android:id="@+id/sets"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/test"
+                android:textSize="16dp"
+                tools:ignore="SpUsage,TextSizeCheck" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/icons"
+            app:layout_constraintBottom_toBottomOf="parent"
+            android:orientation="horizontal"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <ImageView
+                android:id="@+id/edit"
+                android:layout_width="23dp"
+                android:layout_height="30dp"
+                android:layout_marginEnd="18dp"
+                android:contentDescription="@string/edit"
+                app:srcCompat="@drawable/edit"
+                tools:ignore="ImageContrastCheck" />
+
+            <ImageView
+                android:id="@+id/delete"
+                android:layout_width="23dp"
+                android:layout_height="30dp"
+                android:layout_marginEnd="16dp"
+                android:contentDescription="@string/delete"
+                app:srcCompat="@drawable/delete"
+                tools:ignore="ImageContrastCheck" />
+        </LinearLayout>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</LinearLayout>

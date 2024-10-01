@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="20dp"
+    android:id="@+id/homepage"
+    tools:context=".ui.home.HomeFragment">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/streak"
+            android:layout_width="160dp"
+            android:layout_height="130dp"
+            android:background="@drawable/rounded_corners_gray_stroke"
+            android:gravity="center"
+            android:padding="30dp"
+            android:text="@string/streak"
+            android:textSize="16dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:ignore="SpUsage,TextSizeCheck" />
+
+        <TextView
+            android:id="@+id/hours_spent_exercising"
+            android:layout_width="160dp"
+            android:layout_height="130dp"
+            android:background="@drawable/rounded_corners_gray_stroke"
+            android:gravity="center"
+            android:padding="30dp"
+            android:text="@string/hours_spent_exercising"
+            android:textSize="16dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:ignore="SpUsage,TextSizeCheck" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="150dp" >
+
+        <TextView
+            android:id="@+id/workouts_done"
+            android:layout_width="160dp"
+            android:layout_height="130dp"
+            android:background="@drawable/rounded_corners_gray_stroke"
+            android:gravity="center"
+            android:padding="30dp"
+            android:text="@string/workouts_done"
+            android:textSize="16dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:ignore="SpUsage,TextSizeCheck" />
+
+        <TextView
+            android:id="@+id/today_form"
+            android:layout_width="160dp"
+            android:layout_height="130dp"
+            android:background="@drawable/rounded_corners_gray_stroke"
+            android:gravity="center"
+            android:padding="30dp"
+            android:text="@string/your_form_today"
+            android:textAllCaps="false"
+            android:textSize="16dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:ignore="SpUsage,TextSizeCheck" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="300dp">
+
+        <LinearLayout
+            android:layout_width="160dp"
+            android:layout_height="120dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:background="@drawable/background_color_selector_gray"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:id="@+id/design_your_training_plan">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/design_your_training_plan"
+                android:textAllCaps="false"
+                android:layout_marginTop="30dp"
+                android:layout_marginStart="5dp"
+                android:layout_marginEnd="5dp"
+                android:layout_marginBottom="5dp"
+                android:textSize="16dp"
+                android:gravity="center"
+                tools:ignore="SpUsage,TextSizeCheck"/>
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_marginBottom="30dp"
+                android:src="@drawable/personal_plan" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="160dp"
+            android:layout_height="120dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:background="@drawable/background_color_selector_gray"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:id="@+id/list_of_exercises">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/list_of_exercises"
+                android:textAllCaps="false"
+                android:layout_marginTop="30dp"
+                android:layout_marginBottom="5dp"
+                android:textSize="16dp"
+                android:gravity="center"
+                tools:ignore="SpUsage,TextSizeCheck"/>
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_marginBottom="30dp"
+                android:src="@drawable/list_of_exercises" />
+        </LinearLayout>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        android:layout_marginTop="440dp"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:background="@drawable/background_color_selector_pink"
+        android:gravity="center"
+        android:paddingStart="30dp"
+        android:id="@+id/start_your_training_session">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/start_your_training_session"
+            android:textAllCaps="false"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+            android:textSize="16dp"
+            android:gravity="center"
+            tools:ignore="SpUsage,TextSizeCheck"/>
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginBottom="30dp"
+            android:src="@drawable/session" />
+    </LinearLayout>
+
+</FrameLayout>
