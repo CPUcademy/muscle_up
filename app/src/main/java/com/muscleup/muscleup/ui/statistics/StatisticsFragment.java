@@ -10,7 +10,6 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.LinearLayout;
-import android.widget.Toast;
 
 import androidx.annotation.NonNull;
 import androidx.fragment.app.Fragment;
@@ -26,7 +25,6 @@ import com.github.mikephil.charting.formatter.IndexAxisValueFormatter;
 import com.muscleup.muscleup.FileUtility;
 import com.muscleup.muscleup.R;
 import com.muscleup.muscleup.databinding.FragmentStatisticsBinding;
-import com.muscleup.muscleup.ui.camera.PoseLandmarkerHelper;
 import com.muscleup.muscleup.ui.camera.fragment.CameraFragment;
 import com.muscleup.muscleup.ui.home.HomeFragment;
 import com.muscleup.muscleup.ui.home.SessionModel;
@@ -74,7 +72,6 @@ public class StatisticsFragment extends Fragment
 
         personal_records = root.findViewById(R.id.personal_records);
         personal_records.setOnClickListener(v -> requireActivity().getSupportFragmentManager().beginTransaction().replace(R.id.stats, new CameraFragment(), "records").commit()); // RecordFragment
-        Toast.makeText(getContext(), PoseLandmarkerHelper.resultList, Toast.LENGTH_SHORT).show();
 
         goals = root.findViewById(R.id.goals);
         goals.setOnClickListener(v -> requireActivity().getSupportFragmentManager().beginTransaction().replace(R.id.stats, new WeightFragment(), "weight").commit());
