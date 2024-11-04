@@ -75,10 +75,44 @@ public class BluetoothUtil {
         }
     }
 
+    static boolean hasCameraPermissions(Fragment fragment, ActivityResultLauncher<String> requestPermissionLauncher) {
+        if (Build.VERSION.SDK_INT < Build.VERSION_CODES.M)
+            return true;
+
+        boolean missingPermissions = fragment.getActivity().checkSelfPermission(Manifest.permission.CAMERA) != PackageManager.PERMISSION_GRANTED;
+        boolean showRationale = fragment.shouldShowRequestPermissionRationale(Manifest.permission.CAMERA);
+
+        if (missingPermissions) {
+            if (showRationale) {
+                showRationaleDialog(fragment, (dialog, which) ->
+                        requestPermissionLauncher.launch(Manifest.permission.CAMERA));
+            } else {
+                requestPermissionLauncher.launch(Manifest.permission.CAMERA);
+            }
+            return false;
+        } else {
+            return true;
+        }
+    }
+
+
     static void onPermissionsResult(Fragment fragment, boolean granted, PermissionGrantedCallback cb) {
         if(Build.VERSION.SDK_INT < Build.VERSION_CODES.S)
             return;
         boolean showRationale = fragment.shouldShowRequestPermissionRationale(Manifest.permission.BLUETOOTH_CONNECT);
+        if (granted) {
+            cb.call();
+        } else if (showRationale) {
+            showRationaleDialog(fragment, (dialog, which) -> cb.call());
+        } else {
+            showSettingsDialog(fragment);
+        }
+    }
+
+    static void onPermissionsResult2(Fragment fragment, boolean granted, PermissionGrantedCallback cb) {
+        if(Build.VERSION.SDK_INT < Build.VERSION_CODES.S)
+            return;
+        boolean showRationale = fragment.shouldShowRequestPermissionRationale(Manifest.permission.CAMERA);
         if (granted) {
             cb.call();
         } else if (showRationale) {

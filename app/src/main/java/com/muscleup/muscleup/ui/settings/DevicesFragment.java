@@ -24,7 +24,6 @@ import androidx.fragment.app.ListFragment;
 import com.muscleup.muscleup.R;
 
 import java.util.ArrayList;
-import java.util.Collections;
 
 public class DevicesFragment extends ListFragment {
 
@@ -32,6 +31,7 @@ public class DevicesFragment extends ListFragment {
     private final ArrayList<BluetoothDevice> listItems = new ArrayList<>();
     private ArrayAdapter<BluetoothDevice> listAdapter;
     ActivityResultLauncher<String> requestBluetoothPermissionLauncherForRefresh;
+    ActivityResultLauncher<String> requestCameraPermissionLauncherForRefresh;
     private Menu menu;
     private boolean permissionMissing;
     @SuppressLint("StaticFieldLeak")
@@ -61,6 +61,10 @@ public class DevicesFragment extends ListFragment {
         requestBluetoothPermissionLauncherForRefresh = registerForActivityResult(
                 new ActivityResultContracts.RequestPermission(),
                 granted -> BluetoothUtil.onPermissionsResult(this, granted, this::refresh));
+
+        requestCameraPermissionLauncherForRefresh = registerForActivityResult(
+                new ActivityResultContracts.RequestPermission(),
+                granted -> BluetoothUtil.onPermissionsResult2(this, granted, this::refresh));
     }
 
     @Override
@@ -94,6 +98,8 @@ public class DevicesFragment extends ListFragment {
         if (id == R.id.bt_refresh) {
             if(BluetoothUtil.hasPermissions(this, requestBluetoothPermissionLauncherForRefresh))
                 refresh();
+            if(BluetoothUtil.hasCameraPermissions(this, requestCameraPermissionLauncherForRefresh))
+                refresh();
             return true;
         } else {
             return super.onOptionsItemSelected(item);
@@ -105,7 +111,8 @@ public class DevicesFragment extends ListFragment {
         listItems.clear();
         if(bluetoothAdapter != null) {
             if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.S) {
-                permissionMissing = requireActivity().checkSelfPermission(Manifest.permission.BLUETOOTH_CONNECT) != PackageManager.PERMISSION_GRANTED;
+                permissionMissing = (requireActivity().checkSelfPermission(Manifest.permission.BLUETOOTH_CONNECT) != PackageManager.PERMISSION_GRANTED) ||
+                        (requireActivity().checkSelfPermission(Manifest.permission.CAMERA) != PackageManager.PERMISSION_GRANTED);
                 if(menu != null && menu.findItem(R.id.bt_refresh) != null)
                     menu.findItem(R.id.bt_refresh).setVisible(permissionMissing);
             }

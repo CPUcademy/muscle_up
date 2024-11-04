@@ -1,4 +1,4 @@
-<resources>
+<resources xmlns:tools="http://schemas.android.com/tools">
     <string name="app_name" translatable="false">Muscle Up</string>
     <string name="title_home">Home</string>
     <string name="title_statistics">Statistics</string>
@@ -183,5 +183,45 @@
         <item>Shoulders</item>
         <item>Biceps &amp; Triceps</item>
         <item>Legs</item>
+    </string-array>
+
+    <string name="media_pipe" tools:ignore="MissingTranslation">MediaPipe</string>
+
+    <string name="alt_bottom_sheet_chevron" tools:ignore="MissingTranslation">Bottom sheet expandable indicator</string>
+
+    <string name="alt_bottom_sheet_max_results_button_minus" tools:ignore="MissingTranslation">Decreasing
+        maximum pose results button</string>
+    <string name="alt_bottom_sheet_max_results_button_plus" tools:ignore="MissingTranslation">Increasing
+        maximum pose results button</string>
+    <string name="alt_bottom_sheet_threshold_button_minus" tools:ignore="MissingTranslation">Decreasing
+        threshold of pose detect results button</string>
+    <string name="alt_bottom_sheet_threshold_button_plus" tools:ignore="MissingTranslation">Increasing
+        threshold of pose detect results button</string>
+    <string name="menu_camera" tools:ignore="MissingTranslation">Camera</string>
+    <string name="menu_gallery" tools:ignore="MissingTranslation">Gallery</string>
+    <string name="tv_gallery_placeholder" tools:ignore="MissingTranslation">Click + to add an image or a video
+        to begin running the pose landmarker.</string>
+
+    <string name="label_inference_time" tools:ignore="MissingTranslation">Inference Time</string>
+    <string name="label_fps" tools:ignore="MissingTranslation">Frames per Second</string>
+    <string name="label_pose_detection_confidence_threshold" tools:ignore="MissingTranslation">Detection
+        Threshold</string>
+    <string name="label_pose_tracking_confidence_threshold" tools:ignore="MissingTranslation">Tracking
+        Threshold</string>
+    <string name="label_pose_presence_confidence_threshold" tools:ignore="MissingTranslation">Presence
+        Threshold</string>
+    <string name="label_num_poses" tools:ignore="MissingTranslation">Number of Poses</string>
+    <string name="label_delegate" tools:ignore="MissingTranslation">Delegate</string>
+    <string name="label_models" tools:ignore="MissingTranslation">Model</string>
+
+    <string-array name="delegate_spinner_titles">
+        <item>CPU</item>
+        <item>GPU</item>
+    </string-array>
+
+    <string-array name="models_spinner_titles">
+        <item>Pose Landmarker Full</item>
+        <item>Pose Landmarker Lite</item>
+        <item>Pose Landmarker Heavy</item>
     </string-array>
 </resources>

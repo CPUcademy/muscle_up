@@ -6,4 +6,18 @@
     <color name="light_pink">#FF69C3</color>
     <color name="gray">#6E6E6E</color>
     <color name="blue">#256fff</color>
+	
+	<color name="mp_color_primary">#007F8B</color>
+    <color name="mp_color_primary_variant">#12B5CB</color>
+    <color name="mp_color_primary_dark">#00676D</color>
+    <color name="mp_color_secondary">#FBBC04</color>
+    <color name="mp_color_secondary_variant">#F9AB00</color>
+    <color name="mp_color_error">#B00020</color>
+    <color name="toolbar_background">#E0E0E0</color>
+    <color name="ic_launcher_background">#FFFFFF</color>
+    <color name="bottom_sheet_background">#EEEEEE</color>
+    <color name="bottom_sheet_text_color">@android:color/black</color>
+    <color name="icActive">#FFFFFFFF</color>
+    <color name="icFocused">#DDFFFFFF</color>
+    <color name="icPressed">#AAFFFFFF</color>
 </resources>
