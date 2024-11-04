@@ -1,0 +1,3 @@
+from MuscleUp import *
+m = MuscleUp([["bicep curls (1)", 10], ["bicep curls (2)", 10], ["bicep curls (3)", 10], ["bicep curls (4)", 10], ["hammer curls (1)", 10], ["hammer curls (2)", 10], ["hammer curls (3)", 10], ["hammer curls (4)", 10], ["narrow push-ups (1)", 10], ["narrow push-ups (2)", 10], ["narrow push-ups (3)", 10], ["narrow push-ups (4)", 10], ["tiger push-ups (1)", 5], ["tiger push-ups (2)", 5], ["tiger push-ups (3)", 5], ["tiger push-ups (4)", 5], ["diamond push-ups (1)", 5], ["diamond push-ups (2)", 5], ["diamond push-ups (3)", 5], ["diamond push-ups (4)", 5], ["push-ups (1)", 10], ["push-ups (2)", 10], ["push-ups (3)", 10], ["push-ups (4)", 10]], 0)
+del m
