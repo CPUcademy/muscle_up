@@ -30,7 +30,7 @@
     <string name="chest_workout">Trening klatki piersiowej</string>
     <string name="back_workout">Trening pleców</string>
     <string name="shoulders_workout">Trening barków</string>
-    <string name="arms_workout">Trening ramion</string>
+    <string name="arms_workout">Trening biceps &amp; triceps</string>
     <string name="legs_workout">Trening nóg</string>
     <string name="add_an_exercise">Dodaj ćwiczenie</string>
     <string name="name_of_the_exercise">Nazwa ćwiczenia</string>
@@ -130,7 +130,7 @@
     <string name="absS">brzuch</string>
     <string name="chestS">klatka piersiowa</string>
     <string name="legsS">nogi</string>
-    <string name="armsS">ramiona</string>
+    <string name="armsS">biceps &amp; triceps</string>
     <string name="shouldersS">barki</string>
     <string name="backS">plecy</string>
     <string name="pull_ups">podciągnięcia</string>

@@ -71,7 +71,7 @@ public class StatisticsFragment extends Fragment
         }
 
         personal_records = root.findViewById(R.id.personal_records);
-        personal_records.setOnClickListener(v -> requireActivity().getSupportFragmentManager().beginTransaction().replace(R.id.stats, new CameraFragment(), "records").commit()); // RecordFragment
+        personal_records.setOnClickListener(v -> requireActivity().getSupportFragmentManager().beginTransaction().replace(R.id.stats, new RecordFragment(), "records").commit()); // RecordFragment
 
         goals = root.findViewById(R.id.goals);
         goals.setOnClickListener(v -> requireActivity().getSupportFragmentManager().beginTransaction().replace(R.id.stats, new WeightFragment(), "weight").commit());

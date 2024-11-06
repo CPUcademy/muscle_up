@@ -31,7 +31,7 @@
     <string name="chest_workout">Chest workout</string>
     <string name="back_workout">Back workout</string>
     <string name="shoulders_workout">Shoulders workout</string>
-    <string name="arms_workout">Arms workout</string>
+    <string name="arms_workout">Biceps &amp; triceps workout</string>
     <string name="legs_workout">Legs workout</string>
     <string name="add_an_exercise">Add an exercise</string>
     <string name="name_of_the_exercise">Name of the exercise</string>
@@ -131,7 +131,7 @@
     <string name="absS">abs</string>
     <string name="chestS">chest</string>
     <string name="legsS">legs</string>
-    <string name="armsS">arms</string>
+    <string name="armsS">biceps &amp; triceps</string>
     <string name="shouldersS">shoulders</string>
     <string name="backS">back</string>
     <string name="pull_ups">pull-ups</string>

@@ -58,7 +58,7 @@ public class AddRecordFragment extends Fragment {
         numberSpinner = rootView.findViewById(R.id.numberS);
 
         numbersForSpinner = new ArrayList<>();
-        for (int i = 1; i <= 100; i++)
+        for (int i = 1; i <= 10000; i++)
             numbersForSpinner.add(String.valueOf(i));
 
         ArrayList<ArrayList<WorkoutModel>> workoutArrays = new ArrayList<>();

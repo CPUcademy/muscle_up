@@ -86,8 +86,6 @@ public class AddExerciseFragment extends Fragment
             array = HomeFragment.customArray;
 
         numbersForSpinner = new ArrayList<>();
-        fillNumbersForSpinner(50);
-        Functions.setUpSpinner2(requireContext(), numberOfReps, numbersForSpinner);
         fillNumbersForSpinner(500);
         Functions.setUpSpinner2(requireContext(), weight, numbersForSpinner);
 
@@ -116,6 +114,8 @@ public class AddExerciseFragment extends Fragment
         numbersForSpinner = new ArrayList<>();
         fillNumbersForSpinner(10);
         Functions.setUpSpinner2(requireContext(), numberOfSets, numbersForSpinner);
+        fillNumbersForSpinner(10000);
+        Functions.setUpSpinner2(requireContext(), numberOfReps, numbersForSpinner);
 
         if(name != null && reps != null && sets != null && weightt != null && diffic != null)
         {
