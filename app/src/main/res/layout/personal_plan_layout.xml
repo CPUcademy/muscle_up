@@ -1,0 +1,596 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/background">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/training_plan"
+        android:textAppearance="?android:textAppearanceLarge"
+        android:paddingStart="16dp"
+        android:paddingEnd="16dp"
+        android:paddingBottom="30dp"
+        android:gravity="center"
+        android:background="@color/background"
+        android:textAllCaps="false" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:minWidth="140dp"
+                    android:layout_marginRight="40dp"
+                    tools:ignore="RtlHardcoded">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="16dp"
+                        android:layout_marginBottom="8dp"
+                        android:text="@string/monday"
+                        android:textSize="20sp" />
+
+                    <FrameLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/mondayFragment"
+                        android:orientation="vertical">
+
+                        <CheckBox
+                            android:id="@+id/abs_monday"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/abs"
+                            tools:ignore="DuplicateSpeakableTextCheck,TextContrastCheck,TouchTargetSizeCheck" />
+
+                        <CheckBox
+                            android:id="@+id/chest_monday"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="33dp"
+                            android:text="@string/chest"
+                            tools:ignore="DuplicateSpeakableTextCheck,TextContrastCheck,TouchTargetSizeCheck" />
+
+                        <CheckBox
+                            android:id="@+id/back_monday"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="66dp"
+                            android:text="@string/back"
+                            tools:ignore="DuplicateSpeakableTextCheck,TextContrastCheck,TouchTargetSizeCheck" />
+
+                        <CheckBox
+                            android:id="@+id/shoulders_monday"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="97dp"
+                            android:text="@string/shoulders"
+                            tools:ignore="DuplicateSpeakableTextCheck,TextContrastCheck,TouchTargetSizeCheck" />
+
+                        <CheckBox
+                            android:id="@+id/arms_monday"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="130dp"
+                            android:text="@string/biceps_amp_triceps"
+                            tools:ignore="DuplicateSpeakableTextCheck,TextContrastCheck,TouchTargetSizeCheck" />
+
+                        <CheckBox
+                            android:id="@+id/legs_monday"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="163dp"
+                            android:text="@string/legs"
+                            tools:ignore="DuplicateSpeakableTextCheck,TextContrastCheck,TouchTargetSizeCheck" />
+
+                        <CheckBox
+                            android:id="@+id/custom_monday"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="196dp"
+                            android:text="@string/custom"
+                            tools:ignore="DuplicateSpeakableTextCheck,TextContrastCheck,TouchTargetSizeCheck" />
+                    </FrameLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:minWidth="140dp" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="16dp"
+                        android:layout_marginBottom="8dp"
+                        android:text="@string/tuesday"
+                        android:textSize="20sp" />
+
+                    <FrameLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/tuesdayFragment"
+                        android:orientation="vertical">
+
+                        <CheckBox
+                            android:id="@+id/abs_tuesday"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/abs"
+                            tools:ignore="TextContrastCheck,TouchTargetSizeCheck" />
+
+                        <CheckBox
+                            android:id="@+id/chest_tuesday"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="33dp"
+                            android:text="@string/chest"
+                            tools:ignore="TextContrastCheck,TouchTargetSizeCheck" />
+
+                        <CheckBox
+                            android:id="@+id/back_tuesday"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="66dp"
+                            android:text="@string/back"
+                            tools:ignore="TextContrastCheck,TouchTargetSizeCheck" />
+
+                        <CheckBox
+                            android:id="@+id/shoulders_tuesday"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="97dp"
+                            android:text="@string/shoulders"
+                            tools:ignore="TextContrastCheck,TouchTargetSizeCheck" />
+
+                        <CheckBox
+                            android:id="@+id/arms_tuesday"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="130dp"
+                            android:text="@string/biceps_amp_triceps"
+                            tools:ignore="TextContrastCheck,TouchTargetSizeCheck" />
+
+                        <CheckBox
+                            android:id="@+id/legs_tuesday"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="163dp"
+                            android:text="@string/legs"
+                            tools:ignore="TextContrastCheck,TouchTargetSizeCheck" />
+
+                        <CheckBox
+                            android:id="@+id/custom_tuesday"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="196dp"
+                            android:text="@string/custom"
+                            tools:ignore="DuplicateSpeakableTextCheck,TextContrastCheck,TouchTargetSizeCheck" />
+                    </FrameLayout>
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:minWidth="140dp"
+                    android:layout_marginRight="40dp"
+                    tools:ignore="RtlHardcoded">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="16dp"
+                        android:layout_marginBottom="8dp"
+                        android:text="@string/wednesday"
+                        android:textSize="20sp" />
+
+                    <FrameLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/wednesdayFragment"
+                        android:orientation="vertical">
+
+                        <CheckBox
+                            android:id="@+id/abs_wednesday"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/abs"
+                            tools:ignore="TextContrastCheck,TouchTargetSizeCheck" />
+
+                        <CheckBox
+                            android:id="@+id/chest_wednesday"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="33dp"
+                            android:text="@string/chest"
+                            tools:ignore="TextContrastCheck,TouchTargetSizeCheck" />
+
+                        <CheckBox
+                            android:id="@+id/back_wednesday"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="66dp"
+                            android:text="@string/back"
+                            tools:ignore="TextContrastCheck,TouchTargetSizeCheck" />
+
+                        <CheckBox
+                            android:id="@+id/shoulders_wednesday"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="97dp"
+                            android:text="@string/shoulders"
+                            tools:ignore="TextContrastCheck,TouchTargetSizeCheck" />
+
+                        <CheckBox
+                            android:id="@+id/arms_wednesday"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="130dp"
+                            android:text="@string/biceps_amp_triceps"
+                            tools:ignore="TextContrastCheck,TouchTargetSizeCheck" />
+
+                        <CheckBox
+                            android:id="@+id/legs_wednesday"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="163dp"
+                            android:text="@string/legs"
+                            tools:ignore="TextContrastCheck,TouchTargetSizeCheck" />
+
+                        <CheckBox
+                            android:id="@+id/custom_wednesday"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="196dp"
+                            android:text="@string/custom"
+                            tools:ignore="DuplicateSpeakableTextCheck,TextContrastCheck,TouchTargetSizeCheck" />
+                    </FrameLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:minWidth="140dp" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="16dp"
+                        android:layout_marginBottom="8dp"
+                        android:text="@string/thursday"
+                        android:textSize="20sp" />
+
+                    <FrameLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/thursdayFragment"
+                        android:orientation="vertical">
+
+                        <CheckBox
+                            android:id="@+id/abs_thursday"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/abs"
+                            tools:ignore="TextContrastCheck,TouchTargetSizeCheck" />
+
+                        <CheckBox
+                            android:id="@+id/chest_thursday"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="33dp"
+                            android:text="@string/chest"
+                            tools:ignore="TextContrastCheck,TouchTargetSizeCheck" />
+
+                        <CheckBox
+                            android:id="@+id/back_thursday"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="66dp"
+                            android:text="@string/back"
+                            tools:ignore="TextContrastCheck,TouchTargetSizeCheck" />
+
+                        <CheckBox
+                            android:id="@+id/shoulders_thursday"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="97dp"
+                            android:text="@string/shoulders"
+                            tools:ignore="TextContrastCheck,TouchTargetSizeCheck" />
+
+                        <CheckBox
+                            android:id="@+id/arms_thursday"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="130dp"
+                            android:text="@string/biceps_amp_triceps"
+                            tools:ignore="TextContrastCheck,TouchTargetSizeCheck" />
+
+                        <CheckBox
+                            android:id="@+id/legs_thursday"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="163dp"
+                            android:text="@string/legs"
+                            tools:ignore="TextContrastCheck,TouchTargetSizeCheck" />
+
+                        <CheckBox
+                            android:id="@+id/custom_thursday"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="196dp"
+                            android:text="@string/custom"
+                            tools:ignore="DuplicateSpeakableTextCheck,TextContrastCheck,TouchTargetSizeCheck" />
+                    </FrameLayout>
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:minWidth="140dp"
+                    android:layout_marginRight="40dp"
+                    tools:ignore="RtlHardcoded">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="16dp"
+                        android:layout_marginBottom="8dp"
+                        android:text="@string/friday"
+                        android:textSize="20sp" />
+
+                    <FrameLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/fridayFragment"
+                        android:orientation="vertical">
+
+                        <CheckBox
+                            android:id="@+id/abs_friday"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/abs"
+                            tools:ignore="TextContrastCheck,TouchTargetSizeCheck" />
+
+                        <CheckBox
+                            android:id="@+id/chest_friday"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="33dp"
+                            android:text="@string/chest"
+                            tools:ignore="TextContrastCheck,TouchTargetSizeCheck" />
+
+                        <CheckBox
+                            android:id="@+id/back_friday"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="66dp"
+                            android:text="@string/back"
+                            tools:ignore="TextContrastCheck,TouchTargetSizeCheck" />
+
+                        <CheckBox
+                            android:id="@+id/shoulders_friday"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="97dp"
+                            android:text="@string/shoulders"
+                            tools:ignore="TextContrastCheck,TouchTargetSizeCheck" />
+
+                        <CheckBox
+                            android:id="@+id/arms_friday"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="130dp"
+                            android:text="@string/biceps_amp_triceps" />
+
+                        <CheckBox
+                            android:id="@+id/legs_friday"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="163dp"
+                            android:text="@string/legs" />
+
+                        <CheckBox
+                            android:id="@+id/custom_friday"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="196dp"
+                            android:text="@string/custom"
+                            tools:ignore="DuplicateSpeakableTextCheck,TextContrastCheck,TouchTargetSizeCheck" />
+                    </FrameLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:minWidth="140dp" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="16dp"
+                        android:layout_marginBottom="8dp"
+                        android:text="@string/saturday"
+                        android:textSize="20sp" />
+
+                    <FrameLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/saturdayFragment"
+                        android:orientation="vertical">
+
+                        <CheckBox
+                            android:id="@+id/abs_saturday"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/abs"
+                            tools:ignore="TextContrastCheck,TouchTargetSizeCheck" />
+
+                        <CheckBox
+                            android:id="@+id/chest_saturday"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="33dp"
+                            android:text="@string/chest"
+                            tools:ignore="TextContrastCheck,TouchTargetSizeCheck" />
+
+                        <CheckBox
+                            android:id="@+id/back_saturday"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="66dp"
+                            android:text="@string/back"
+                            tools:ignore="TextContrastCheck,TouchTargetSizeCheck" />
+
+                        <CheckBox
+                            android:id="@+id/shoulders_saturday"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="97dp"
+                            android:text="@string/shoulders"
+                            tools:ignore="TextContrastCheck,TouchTargetSizeCheck" />
+
+                        <CheckBox
+                            android:id="@+id/arms_saturday"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="130dp"
+                            android:text="@string/biceps_amp_triceps" />
+
+                        <CheckBox
+                            android:id="@+id/legs_saturday"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="163dp"
+                            android:text="@string/legs" />
+
+                        <CheckBox
+                            android:id="@+id/custom_saturday"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="196dp"
+                            android:text="@string/custom"
+                            tools:ignore="DuplicateSpeakableTextCheck,TextContrastCheck,TouchTargetSizeCheck" />
+                    </FrameLayout>
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:minWidth="140dp"
+                    android:layout_marginRight="40dp"
+                    tools:ignore="RtlHardcoded,UselessParent">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="16dp"
+                        android:layout_marginBottom="8dp"
+                        android:text="@string/sunday"
+                        android:textSize="20sp" />
+
+                    <FrameLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/sundayFragment"
+                        android:orientation="vertical">
+
+                        <CheckBox
+                            android:id="@+id/abs_sunday"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/abs" />
+
+                        <CheckBox
+                            android:id="@+id/chest_sunday"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="33dp"
+                            android:text="@string/chest" />
+
+                        <CheckBox
+                            android:id="@+id/back_sunday"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="66dp"
+                            android:text="@string/back" />
+
+                        <CheckBox
+                            android:id="@+id/shoulders_sunday"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="97dp"
+                            android:text="@string/shoulders" />
+
+                        <CheckBox
+                            android:id="@+id/arms_sunday"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="130dp"
+                            android:text="@string/biceps_amp_triceps" />
+
+                        <CheckBox
+                            android:id="@+id/legs_sunday"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="163dp"
+                            android:text="@string/legs" />
+
+                        <CheckBox
+                            android:id="@+id/custom_sunday"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="196dp"
+                            android:text="@string/custom"
+                            tools:ignore="DuplicateSpeakableTextCheck,TextContrastCheck,TouchTargetSizeCheck" />
+                    </FrameLayout>
+                </LinearLayout>
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/confirmPlan"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="16dp"
+                android:gravity="center"
+                android:background="@drawable/background_color_selector_pink"
+                android:layout_marginTop="15dp"
+                android:layout_marginBottom="60dp"
+                android:text="@string/confirm"
+                android:textAllCaps="false"
+                tools:ignore="SpUsage" />
+
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

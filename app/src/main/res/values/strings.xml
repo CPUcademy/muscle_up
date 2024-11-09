@@ -1,0 +1,187 @@
+<resources>
+    <string name="app_name" translatable="false">Muscle Up</string>
+    <string name="title_home">Home</string>
+    <string name="title_statistics">Statistics</string>
+    <string name="title_workouts">Workouts</string>
+    <string name="title_awards">Awards</string>
+    <string name="title_settings">Settings</string>
+
+    <string name="devices">Connect the Muscle Up device</string>
+    <string name="bluetooth_permission_title">Bluetooth permission</string>
+    <string name="bluetooth_permission_grant">Bluetooth permission is required by this App. Please grant in next dialog.</string>
+    <string name="bluetooth_permission_denied">Bluetooth permission was permanently denied. You have to enable permission \"%s\" in App settings.</string>
+    <string name="date">Enter the end date of your vacation:</string>
+    <string name="trainingDays">Select your training days:</string>
+    <string name="streak">Streak</string>
+    <string name="start_your_training_session">Start your training session</string>
+    <string name="biceps_amp_triceps"><![CDATA[Biceps & Triceps]]></string>
+    <string name="legs">Legs</string>
+    <string name="shoulders">Shoulders</string>
+    <string name="back">Back</string>
+    <string name="chest">Chest</string>
+    <string name="abs">Abs</string>
+    <string name="your_today_s_stats">Your today\'s stats</string>
+    <string name="personal_records">Personal records</string>
+    <string name="your_form_today">Your form today</string>
+    <string name="your_overall_form">Your overall form:</string>
+    <string name="design_your_training_plan">Design your training plan</string>
+    <string name="delete">Delete</string>
+    <string name="test">Test</string>
+    <string name="abs_workout">Abs workout</string>
+    <string name="chest_workout">Chest workout</string>
+    <string name="back_workout">Back workout</string>
+    <string name="shoulders_workout">Shoulders workout</string>
+    <string name="arms_workout">Arms workout</string>
+    <string name="legs_workout">Legs workout</string>
+    <string name="add_an_exercise">Add an exercise</string>
+    <string name="name_of_the_exercise">Name of the exercise</string>
+    <string name="defaults">Go to default settings</string>
+    <string name="add_a_record_">Add a record</string>
+    <string name="number_of_reps_seconds_kilograms">Number of reps / seconds / kilograms</string>
+    <string name="training_plan">Training plan</string>
+    <string name="monday">Monday</string>
+    <string name="tuesday">Tuesday</string>
+    <string name="wednesday">Wednesday</string>
+    <string name="thursday">Thursday</string>
+    <string name="friday">Friday</string>
+    <string name="saturday">Saturday</string>
+    <string name="sunday">Sunday</string>
+    <string name="no_training">No training!</string>
+    <string name="now">Now</string>
+    <string name="now2">Now:</string>
+    <string name="next">Next</string>
+    <string name="sets_done">Sets done</string>
+    <string name="go_to_your_device">Go to your device.</string>
+    <string name="done">Done</string>
+    <string name="number_of_sets">Number of sets</string>
+    <string name="edit">Edit</string>
+    <string name="permission_missing_use_refresh"><![CDATA[<permission missing, use REFRESH>]]></string>
+    <string name="no_bluetooth_devices_found"><![CDATA[<no bluetooth devices found>]]></string>
+    <string name="bluetooth_is_disabled"><![CDATA[<bluetooth is disabled>]]></string>
+    <string name="bluetooth_not_supported"><![CDATA[<bluetooth not supported>]]></string>
+    <string name="reps_done">Reps done</string>
+    <string name="workouts_done">Workouts done</string>
+    <string name="hours_spent_exercising">Hours spent exercising</string>
+    <string name="which_one_do_you_want_to_use">Which one do you want to use?</string>
+    <string name="confirm">Confirm</string>
+    <string name="are_you_sure_you_want_to_delete">Are you sure you want to delete?</string>
+    <string name="warning">Warning</string>
+    <string name="do_you_want_to_go_to_default_settings">Do you want to go to default settings?</string>
+    <string name="m">M</string>
+    <string name="t">T</string>
+    <string name="s">S</string>
+    <string name="s1">S</string>
+    <string name="f">F</string>
+    <string name="t2">T</string>
+    <string name="w">W</string>
+    <string name="connecting">connecting...</string>
+    <string name="do_you_want_to_skip_this_exercise">Do you want to skip this exercise?</string>
+    <string name="reps">reps</string>
+    <string name="seconds">seconds</string>
+    <string name="connect_to_the_device">Connect to the Muscle Up device if you want to use it.</string>
+    <string name="refresh">REFRESH</string>
+    <string name="restart">Restart</string>
+    <string name="are_you_sure">Are you sure?</string>
+    <string name="diagram">Diagram</string>
+    <string name="list_of_exercises">List of exercises</string>
+    <string name="custom">Custom</string>
+    <string name="custom_workout">Custom workout</string>
+
+    <string name="difficulty_prompt">Difficulty</string>
+    <string-array name="difficulty_levels">
+        <item>All</item>
+        <item>Easy</item>
+        <item>Medium</item>
+        <item>Hard</item>
+    </string-array>
+
+    <string-array name="difficulty_levels2">
+        <item>easy</item>
+        <item>medium</item>
+        <item>hard</item>
+    </string-array>
+
+    <string name="supported_by_the_device">Supported (device)</string>
+    <string-array name="support_spinner_levels">
+        <item>All</item>
+        <item>Yes</item>
+        <item>No</item>
+    </string-array>
+
+    <string name="muscle_group">Muscle group</string>
+    <string name="equipment">Equipment</string>
+    <string name="do_you_have_a_pull_up_bar">Do you have a pull up bar?</string>
+    <string name="do_you_have_dumbbells">Do you have dumbbells?</string>
+    <string name="do_you_have_dip_rails">Do you have dip rails?</string>
+    <string name="your_current_weight">Your current weight</string>
+    <string name="your_weight_goal">Your weight goal</string>
+    <string name="your_current_weight2">Your current weight (in kg)</string>
+    <string name="your_weight_goal2">Your weight goal (in kg)</string>
+    <string name="_0_100">0/100</string>
+    <string name="your_progress">Your weight over time:</string>
+    <string name="difficulty">difficulty:</string>
+    <string name="muscle_groupp">muscle group:</string>
+    <string name="weight_optional">Weight in kg (optional)</string>
+    <string name="rest_time">Rest time</string>
+    <string name="choose_your_rest_time_in_between_sets_in_seconds">Choose your rest time in between sets (in seconds):</string>
+    <string name="challenges">Challenges</string>
+    <string name="push_up_challenge">Push up challenge</string>
+    <string name="pull_up_challenge">Pull up challenge</string>
+    <string name="core_challenge">Core challenge</string>
+    <string name="absS">abs</string>
+    <string name="chestS">chest</string>
+    <string name="legsS">legs</string>
+    <string name="armsS">arms</string>
+    <string name="shouldersS">shoulders</string>
+    <string name="backS">back</string>
+    <string name="pull_ups">pull-ups</string>
+    <string name="dips">dips</string>
+    <string name="no">No</string>
+    <string name="yes">Yes</string>
+    <string name="all">all</string>
+    <string name="the_end">The end</string>
+    <string name="learning_skills">Learning skills</string>
+    <string name="muscle_up">Muscle up</string>
+    <string name="l_sit">L sit</string>
+    <string name="handstand">Handstand</string>
+    <string name="reps2">"reps: "</string>
+    <string name="reps22">"Reps: "</string>
+    <string name="reps2_replacement">"seconds: "</string>
+    <string name="reps2_replacement2">"Seconds: "</string>
+    <string name="sets2">"sets: "</string>
+    <string name="reps_done2">reps done:</string>
+    <string name="number_of_reps">Number of reps / seconds</string>
+    <string name="reps_done2_replacement">seconds done:</string>
+    <string name="unit_reps_or_seconds">Unit</string>
+    <string name="starting_session">Starting a session on the device</string>
+    <string name="reps_powt">reps</string>
+    <string name="designated">Designated</string>
+    <string name="saving_to_list">To which workout do you want to add this exercise?</string>
+    <string name="question">Question</string>
+    <string name="return_to_main_page">Return to the main page</string>
+    <string name="start_timer">Start timer</string>
+    <string name="timer">Timer</string>
+    <string name="other_stats">Other stats</string>
+    <string name="weight_lifted">Weight lifted (kg)</string>
+    <string name="weeks">weeks (7 training sessions)</string>
+    <string name="percent" translatable="false">%</string>
+    <string name="kg" translatable="false">kg</string>
+    <string name="connectingg">connecting...</string>
+    <string name="connectedd">connected</string>
+    <string name="connection_failed">"connection failed: "</string>
+    <string name="connection_lost">"connection lost: "</string>
+    <string name="device_manual">Device manual</string>
+    <string-array name="unit_spinner">
+        <item>reps</item>
+        <item>seconds</item>
+    </string-array>
+    <string-array name="group_spinner_levels">
+        <item>All</item>
+        <item>Abs</item>
+        <item>Chest</item>
+        <item>Back</item>
+        <item>Shoulders</item>
+        <item>Biceps &amp; Triceps</item>
+        <item>Legs</item>
+    </string-array>
+</resources>

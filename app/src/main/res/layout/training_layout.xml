@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/background" >
+
+    <Button
+        android:id="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/test"
+        android:textAppearance="?android:textAppearanceLarge"
+        android:paddingStart="16dp"
+        android:paddingEnd="16dp"
+        android:paddingBottom="30dp"
+        android:gravity="center"
+        android:background="@color/background"
+        android:textAllCaps="false" />
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="460dp"
+        android:id="@+id/exercisesLayout"
+        android:background="@drawable/border" >
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/exercisesList"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1" />
+    </FrameLayout>
+
+    <Button
+        android:id="@+id/add_an_exercise"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/background_color_selector_pink"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="55dp"
+        android:text="@string/add_an_exercise"
+        android:textSize="16dp"
+        tools:ignore="SpUsage,TextSizeCheck"
+        android:textAllCaps="false" />
+
+</LinearLayout>

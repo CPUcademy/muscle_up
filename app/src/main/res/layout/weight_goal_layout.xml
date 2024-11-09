@@ -1,0 +1,75 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/background"
+    android:id="@+id/weightLayout">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/your_progress"
+        tools:ignore="TextContrastCheck" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="220dp"
+        android:layout_marginBottom="10dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="@string/kg"/>
+
+        <com.github.mikephil.charting.charts.LineChart
+            android:id="@+id/chart"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <TextView
+            android:id="@+id/weight_goal"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:background="@drawable/rounded_corners_gray_stroke"
+            android:gravity="center"
+            android:padding="10dp"
+            android:text="@string/your_weight_goal"
+            android:textAllCaps="false"
+            android:textSize="16dp"
+            tools:ignore="SpUsage,TextSizeCheck" />
+
+        <TextView
+            android:id="@+id/weight_now"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:background="@drawable/rounded_corners_gray_stroke"
+            android:gravity="center"
+            android:padding="10dp"
+            android:layout_marginTop="10dp"
+            android:text="@string/your_current_weight"
+            android:textAllCaps="false"
+            android:textSize="16dp"
+            tools:ignore="SpUsage,TextSizeCheck" />
+
+        <Button
+            android:id="@+id/editWeight"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/background_color_selector_gray"
+            android:gravity="center"
+            android:text="@string/edit"
+            android:textAllCaps="false"
+            android:layout_marginTop="20dp"
+            android:textSize="16dp"
+            tools:ignore="SpUsage,TextSizeCheck" />
+    </LinearLayout>
+</LinearLayout>
