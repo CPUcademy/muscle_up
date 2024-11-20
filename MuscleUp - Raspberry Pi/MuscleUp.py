@@ -101,7 +101,10 @@ try:
                                 else:
                                     for index, item in enumerate(exercises):
                                         if item == y:
-                                            self.__display(self.__counter, exercises[index+1][1], self.sup(y[0]))
+                                            try:
+                                                self.__display(self.__counter, exercises[index+1][1], self.sup(y[0]))
+                                            except:
+                                                pass
                                 break
 
                             button_state = gpio.input(reset_button)
@@ -163,7 +166,7 @@ try:
                                         time.sleep(0.1)
                                         buzzer.off()
                                         t = 1
-
+                                    
                                     if "bicep curls" in y[0]:
                                         angle = calculate_angle(shoulder, elbow, wrist)
                                         angle2 = calculate_angle(shoulder2, elbow2, wrist2)
@@ -505,19 +508,20 @@ try:
                                         buzzer.off()
                                         t = 2
                                         t2 = 0
-                                        if (not (self.__e == len(self.__ex)-1)) and rest_time != 0:
-                                            self.__disp.clear()
-                                            x = rest_time
-                                            while x >= 1:
-                                                self.__image1 = Image.new("1", (self.__disp.width, self.__disp.height), "WHITE")
-                                                draw = ImageDraw.Draw(self.__image1)
-                                                draw.text((36,0), "Muscle Up", fill=0)
-                                                draw.text((0,17), "Rest time:", fill=0)
-                                                draw.text((0,32), f"{x}s", fill=0)
-                                                self.__disp.ShowImage(self.__disp.getbuffer(self.__image1))
-                                                time.sleep(1)
+                                        if (not (self.__e == len(self.__ex)-1)):
+                                            if rest_time != 0:
                                                 self.__disp.clear()
-                                                x -= 1
+                                                x = rest_time
+                                                while x >= 1:
+                                                    self.__image1 = Image.new("1", (self.__disp.width, self.__disp.height), "WHITE")
+                                                    draw = ImageDraw.Draw(self.__image1)
+                                                    draw.text((36,0), "Muscle Up", fill=0)
+                                                    draw.text((0,17), "Rest time:", fill=0)
+                                                    draw.text((0,32), f"{x}s", fill=0)
+                                                    self.__disp.ShowImage(self.__disp.getbuffer(self.__image1))
+                                                    time.sleep(1)
+                                                    self.__disp.clear()
+                                                    x -= 1
                                             self.__disp.clear()
                                             self.__e += 1
                                             self.__reps[stripe(y[0])] += self.__counter
@@ -526,8 +530,12 @@ try:
                                             for index, item in enumerate(exercises):
                                                 if y[0] == item[0]:
                                                     h = exercises[index+1][1]
-                                            sup = self.sup(y[0])
                                             self.__display(0, h, self.sup(y[0]))
+                                        else:
+                                            self.__disp.clear()
+                                            self.__e += 1
+                                            self.__reps[stripe(y[0])] += self.__counter
+                                            repsDone += self.__counter
                                         break
                                 
                                 """cv2.rectangle(self.__image, (0,0), (225,73), (245,117,16), -1)
@@ -601,7 +609,7 @@ try:
                         name2 = name2[0:13] + "."
             except:
                 pass
-            if self.__e == len(self.__ex)+1:
+            if self.__e >= len(self.__ex):
                 self.__disp.clear()
             elif self.__k == 0:
                 self.__image1 = Image.new("1", (self.__disp.width, self.__disp.height), "WHITE")
