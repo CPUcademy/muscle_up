@@ -8,7 +8,7 @@ The processed data is then sent back to the app, where users can access various 
 
 ## Important Note
 
-This version was created when I was **still learning Android development**, so the code does **not** follow standard design patterns, architecture guidelines, or best practices.
+This version was created when I was **still learning**, so the code does **not** follow standard design patterns, architecture guidelines, or best practices (basically - spahgetti).
 It is one of the **earliest versions**, shared to **demonstrate how to connect Mediapipe and Raspberry Pi via Bluetooth**.
 
 ---
