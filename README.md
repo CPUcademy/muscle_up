@@ -25,6 +25,6 @@ The full version of **Muscle Up** (not included here) is:
 
 ## Purpose of This Release
 
-This repository is intended for **educational and reference purposes**, to help others understand:
-- How to connect **Android with Raspberry Pi** over **Bluetooth**?
+This repository is intended for **educational and reference purposes** to help others understand:
+- How to connect an Android device to a Raspberry Pi over **Bluetooth**?
 - How to integrate **Mediapipe** for real-time workout analysis?
